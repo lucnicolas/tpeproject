@@ -1,3 +1,9 @@
+//en sois on a pas besoin de javascript psk on l'avais pris pour avoir un score mais,
+//mais en sois le plus important c'est d'avoir un recap des valeurs nutritionelles en fonction du menu choisi
+
+
+
+
 //Valeur théorique pour un homme actif agé entre 18 et 40 ans.
 
 //Calories de base = 2650 kcal/jour.
