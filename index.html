@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>TPE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="script.js"></script>
 </head>
-
 <body>
-    <script src="app.js"></script>
+    <h1>TITRE</h1>
+
+     <p><i>Votre repas du matin : </i>
+        <select name="matin" size="1" id="matin" onchange="valeur_matin();">
+            <option selected disabled>Choisir une option</option>
+            <option value="10">Option 1</option>
+            <option value="8">Option 2</option>
+            <option value="6">Option 3</option>
+            <option value="4">Option 4</option>
+        </select>
+        <input name="id_matin" id="id_matin" type="text" readonly="true" value="" />
+        </p>
+
+        <p><i>Votre repas du midi : </i>
+            <select name="midi" size="1" id="midi" onchange="valeur_midi();">
+                <option selected disabled>Choisir une option</option>
+                <option value="3">Option 5</option>
+                <option value="5">Option 6</option>
+                <option value="7">Option 7</option>
+                <option value="9">Option 8</option>
+            </select>
+            <input name="id_midi" id="id_midi" type="text" readonly="true" value="" />
+        </p>
+
+        <p><i>Votre repas du soir : </i>
+            <select name="soir" size="1" id="soir" onchange="valeur_soir();">
+                <option selected disabled>Choisir une option</option>
+                <option value="1">Option 9</option>
+                <option value="11">Option 10</option>
+                <option value="2">Option 11</option>
+                <option value="12">Option 12</option>
+            </select>
+            <input name="id_soir" id="id_soir" type="text" readonly="true" value="" />
+        </p>
+
+        <h2>Merci d'avoir répondu au questionnaire</h2>
+
+        <input type="submit" value="Valider" onClick="calcul_total();">
+        <input type="submit" value="Reset" onClick="window.location.reload(true);">
 </body>
-
-<body>
-    <p> Petit Dejeuner : <br>
-        <br>
-        Lipides <br> 
-        protéines <br> 
-        glucides <br> 
-        calories 
-        <br>
-        <br>
-        Dejeuner : <br>
-        <br>
-        Lipides <br> 
-        protéines <br> 
-        glucides <br> 
-        calories
-        <br>
-        <br>
-        Diner : <br>
-        <br>
-        Lipides <br> 
-        protéines <br> 
-        glucides <br> 
-        calories <br>
-        <br>
-        Total journée : <br>
-        Lipides <br> 
-        protéines <br> 
-        glucides <br> 
-        calories <br>
-        <br>
-    </p>
-
-</body>
-
 </html>
