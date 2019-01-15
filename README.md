@@ -4,6 +4,7 @@
 16/01/2019 - v.2.1 {
     - mise en place du data mapping dans le script et finalisation des fontions de ce dernier.
     - manque encore finalisation du contenue brut et mise en forme de celle-ci si nécessaire.
+    //TODO supprimer ombres buttons + backgroud-color  
 }
 
 15/01/2019 - v.2.0 {
