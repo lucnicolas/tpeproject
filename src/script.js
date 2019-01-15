@@ -1,11 +1,14 @@
-let matin
-let midi
-let soir
-let total
-let total_calories
-let total_lipides
-let total_glucides
-let total_proteines
+/* --- VARIABLES --- */
+
+
+//Déclaraction des variables totals
+let total_calories=0
+let total_lipides=0
+let total_glucides=0
+let total_proteines=0
+
+
+//Déclaration du dataMapping
 let dataMapping = {
     matin: {
         "option1": {
@@ -87,10 +90,17 @@ let dataMapping = {
     }
 };
 
-function hide()
-{
-document.getElementById('to_hide').style.display = 'none';
-}
+
+
+
+
+
+
+
+/* --- FONCTIONS --- */
+
+
+
 
 function valeur_matin() {
     select = document.getElementById("matin");
@@ -98,39 +108,46 @@ function valeur_matin() {
     valeur = select.options[choice].value;
     document.getElementById('id_matin').value = valeur;
     let data = dataMapping.matin[select.options[choice].value];
-    for(let elm in data){
-        console.log(data[elm]);
-    }
-    console.log(total_calories);
-    console.log(data);
-    matin = select.options[choice].value;
-    matin = parseFloat(matin)
+    total_calories += parseFloat(data.calories);
+    total_lipides += parseFloat(data.lipides);
+    total_glucides += parseFloat(data.glucides);
+    total_proteines += parseFloat(data.proteines);
 }
+
+
 
 function valeur_midi() {
     select = document.getElementById("midi");
     choice = select.selectedIndex;
     valeur = select.options[choice].value;
     document.getElementById('id_midi').value = valeur;
-
-    midi = select.options[choice].value;
-    midi = parseFloat(midi)
+    let data = dataMapping.midi[select.options[choice].value];
+    total_calories += parseFloat(data.calories);
+    total_lipides += parseFloat(data.lipides);
+    total_glucides += parseFloat(data.glucides);
+    total_proteines += parseFloat(data.proteines);
 }
+
+
 
 function valeur_soir() {
     select = document.getElementById("soir");
     choice = select.selectedIndex;
     valeur = select.options[choice].value;
     document.getElementById('id_soir').value = valeur;
-
-    soir = select.options[choice].value;
-    soir = parseFloat(soir)
+    let data = dataMapping.soir[select.options[choice].value];
+    total_calories += parseFloat(data.calories);
+    total_lipides += parseFloat(data.lipides);
+    total_glucides += parseFloat(data.glucides);
+    total_proteines += parseFloat(data.proteines);
 }
 
+
+//Fenête d'alert avec les données totales
+//TODO : mise en forme correcte ?
 function calcul_total(){
-    let total = matin+midi+soir
-    alert("Votre score1 est de "+total+" points !")
-    console.log("Ça va aller, merci.") 
+    alert("Calories : "+total_calories+"\nLipides : "+total_lipides+"\nGlucides : "+total_glucides+"\nProteines : "+total_proteines);
+    console.log("Merci d'avoir participé :)") 
 }
 
 
