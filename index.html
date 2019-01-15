@@ -6,9 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>TITRE</h1>
+    <div id="block1">
+    <h1>Le TITRE du document ...</h1>
+</br>
 
      <p><i>Votre repas du matin : </i>
         <select name="matin" size="1" id="matin" onchange="valeur_matin();">
@@ -20,7 +24,8 @@
         </select>
         <input name="id_matin" id="id_matin" type="text" readonly="true" value="" />
         </p>
-
+    </br>
+</br>
         <p><i>Votre repas du midi : </i>
             <select name="midi" size="1" id="midi" onchange="valeur_midi();">
                 <option selected disabled>Choisir une option</option>
@@ -31,6 +36,8 @@
             </select>
             <input name="id_midi" id="id_midi" type="text" readonly="true" value="" />
         </p>
+    </br>
+</br>
 
         <p><i>Votre repas du soir : </i>
             <select name="soir" size="1" id="soir" onchange="valeur_soir();">
@@ -42,10 +49,15 @@
             </select>
             <input name="id_soir" id="id_soir" type="text" readonly="true" value="" />
         </p>
+    </br>
+</br>
 
         <h2>Merci d'avoir répondu au questionnaire</h2>
+    </br>
 
-        <input type="submit" value="Valider" onClick="calcul_total();">
-        <input type="submit" value="Reset" onClick="window.location.reload(true);">
+        <input id="button1" type="submit" value="Valider" onClick="calcul_total();">
+        <input id="button2" type="submit" value="Reset" onClick="window.location.reload(true);">
+    </br>
+    </div>
 </body>
 </html>
