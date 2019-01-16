@@ -1,6 +1,8 @@
 body {
     font-family: Arial,sans-serif;
     font-size: 15px;
+    background-color: black;
+    color: white;
 }
 
 h1 {
@@ -9,15 +11,15 @@ h1 {
 }
 
 h2 {
-    font-variant: small-caps;    
+    font-variant: small-caps; 
 }
 
-#block1 {
-    background-color: beige;
-    margin: 50px 50px;
-    padding: 0px 0px 50px 50px;
-    width: 500px;
-    float: left;
+#background {
+    background-color: #252934;
+    margin: 40px 25px 0 25px;
+    padding: 50px 50px 50px 50px;
+    width: 100em;
+    height: 39em;
     border-radius: 10px;     
 	-moz-border-radius: 10px;     
 	-webkit-border-radius: 10px;     
@@ -27,41 +29,76 @@ h2 {
 	font-weight: normal;     
 	border: 1px groove #808080; 
 }
+#block1 {
+    position: absolute;
+    width: 960px;
+    height: 400px;
+    margin: -40px 0;
+}
 
-#button1 {
+#block2 {
+    background-color: #252934;
+    padding: 0px 40px 40px 50px;
+    width: 400px;
+    float: right;
+    border-radius: 10px;     
+	-moz-border-radius: 10px;     
+	-webkit-border-radius: 5px;     
+	box-shadow: 8px 8px 12px #aaa;     
+	-moz-box-shadow: 8px 8px 12px #aaa;     
+	-webkit-box-shadow: 8px 8px 12px #aaa;     
+	font-weight: normal;     
+    border: 2px groove #808080; 
+    text-align: center;
+}
+
+#block3 {
+    background-color: #252934;
+    margin: 330px 0px;
+    padding: 0px 0px 50px 50px;
+    width: 915px;
+    height: 150px;
+    position: relative;    
+    border-radius: 10px;     
+	-moz-border-radius: 10px;     
+	-webkit-border-radius: 10px;     
+	box-shadow: 8px 8px 12px #aaa;     
+	-moz-box-shadow: 8px 8px 12px #aaa;     
+	-webkit-box-shadow: 8px 8px 12px #aaa;     
+	font-weight: normal;     
+    border: 1px groove #808080; 
+}
+
+.button {
     border: solid black;
     display: inline;
     width: 120px;
     height: 50px;
-    background: black;
-    color: white;
     font-size: 20px;
-    margin: 0 auto;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 5px;
+
+}
+#button1 {
+    margin: 0 30px;
+    background: white;
+    color: black;
 }
 
 #button1:hover
 {
-    background: white;
-    color: black
+    background: black;
+    color: white;
 }
 
 #button2 {
-    border: solid black;
-    display: inline;
-    width: 120px;
-    height: 50px;
-    background: black;
-    color: white;
-    font-size: 20px;
-    margin: 0 120px;
-    text-align: center;
-    border-radius: 30px;
+        margin: 0 30px;
+        background: black;
+        color: white;
 }
 
 #button2:hover
 {
     background: white;
-    color: black
+    color: black;
 }
