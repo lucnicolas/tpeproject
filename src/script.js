@@ -1,13 +1,9 @@
 /* --- VARIABLES --- */
-
-
 //Déclaraction des variables totals
 let total_calories=0
 let total_lipides=0
 let total_glucides=0
 let total_proteines=0
-
-
 //Déclaration du dataMapping
 let dataMapping = {
     matin: {
@@ -100,8 +96,6 @@ let dataMapping = {
 /* --- FONCTIONS --- */
 
 
-
-
 function valeur_matin() {
     select = document.getElementById("matin");
     choice = select.selectedIndex;
@@ -113,7 +107,6 @@ function valeur_matin() {
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
 }
-
 
 
 function valeur_midi() {
@@ -129,7 +122,6 @@ function valeur_midi() {
 }
 
 
-
 function valeur_soir() {
     select = document.getElementById("soir");
     choice = select.selectedIndex;
@@ -142,9 +134,7 @@ function valeur_soir() {
     total_proteines += parseFloat(data.proteines);
 }
 
-
-//Fenête d'alert avec les données totales
-//TODO : mise en forme correcte ?
+//Fenête d'alert avec les données finales
 function calcul_total(){
     alert("Calories : "+total_calories+"\nLipides : "+total_lipides+"\nGlucides : "+total_glucides+"\nProteines : "+total_proteines);
     console.log("Merci d'avoir participé :)") 
