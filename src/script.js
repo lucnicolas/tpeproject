@@ -95,6 +95,19 @@ let dataMapping = {
 
 /* --- FONCTIONS --- */
 
+function show() { 
+    if(document.getElementById('hide').style.display=='none') { 
+        document.getElementById('hide').style.display='block'; 
+    } 
+    return false;
+} 
+function hide() { 
+    if(document.getElementById('hide').style.display=='block') { 
+        document.getElementById('hide').style.display='none'; 
+    } 
+    return false;
+}   
+
 
 function valeur_matin() {
     select = document.getElementById("matin");
