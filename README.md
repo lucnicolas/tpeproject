@@ -13,10 +13,12 @@
     - les values des selectors ne correspondent encore à rien mais permette de donner un rendu avec l'alert du score finale ... à voir
 }
 
-
-
-
-
+-
+-
+-
+-
+-
+-
 
 INSTRUCTION TRAVAIL COLABORATIF PROJET GIT :
 # en étant sur master, récupérer d'abord la dernière version de master
