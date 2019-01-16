@@ -12,25 +12,25 @@ let total_proteines=0
 let dataMapping = {
     matin: {
         "option1": {
-            calories: "10",
+            calories: "250",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option2": {
-            calories: "10",
+            calories: "800",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option3": {
-            calories: "10",
+            calories: "280",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option4": {
-            calories: "10",
+            calories: "555",
             lipides: "20",
             glucides: "14",
             proteines: "33"
@@ -38,25 +38,25 @@ let dataMapping = {
     },
     midi: {
         "option5": {
-            calories: "10",
+            calories: "332",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option6": {
-            calories: "10",
+            calories: "101",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option7": {
-            calories: "10",
+            calories: "902",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option8": {
-            calories: "10",
+            calories: "654",
             lipides: "20",
             glucides: "14",
             proteines: "33"
@@ -64,25 +64,25 @@ let dataMapping = {
     },
     soir: {
         "option9": {
-            calories: "10",
+            calories: "403",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option10": {
-            calories: "10",
+            calories: "298",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option11": {
-            calories: "10",
+            calories: "330",
             lipides: "20",
             glucides: "14",
             proteines: "33"
         },
         "option12": {
-            calories: "10",
+            calories: "509",
             lipides: "20",
             glucides: "14",
             proteines: "33"
