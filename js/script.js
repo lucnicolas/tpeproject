@@ -153,7 +153,6 @@ function valeur_soir() {
 $(document).ready(function() {
     $( "#button0" ).click(function() {
         $( "#description" ).hide( "slow" );
-        $( "#background" ).show( "slow" );
     });
     $( "#button1" ).click(function() {
         $( "#block3" ).show( "slow" );
