@@ -99,6 +99,13 @@ function valeur_matin() {
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
+    if (document.getElementById("midi").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
+        document.getElementById("button1").removeAttribute("disabled")
+        console.log("Formulaire completé")
+
+    } else {
+        console.log("Formulaire incomplé")
+    } 
 }
 
 
@@ -111,6 +118,13 @@ function valeur_midi() {
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
+    if (document.getElementById("soir").selectedIndex != 0) {    
+        document.getElementById("button1").removeAttribute("disabled")
+        console.log("Formulaire completé")
+
+    } else {
+        console.log("Formulaire incomplé")
+    } 
 }
 
 
@@ -127,6 +141,12 @@ function valeur_soir() {
     document.getElementById('lip').innerHTML = total_lipides;
     document.getElementById('glu').innerHTML = total_glucides;
     document.getElementById('pro').innerHTML = total_proteines;
+    if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
+        document.getElementById("button1").removeAttribute("disabled")
+        console.log("Formulaire completé")
+    } else {
+        console.log("Formulaire incomplé")
+    } 
 }
 
 
