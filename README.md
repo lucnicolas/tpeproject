@@ -1,16 +1,26 @@
 # tpeproject
 11th school project - TPE Obesity
 
-16/01/2019 - v.2.1 {
-    - mise en place du data mapping dans le script et finalisation des fontions de ce dernier.
-    - manque encore finalisation du contenue brut et mise en forme de celle-ci si nécessaire.
-    //TODO supprimer ombres buttons + backgroud-color  
+17/01/2019 - v.1.2 {
+APPLICATION FONCTIONNELLE
+    - nouvelles mise en forme et nouvelles couleurs.
+    - nouvelles fonctions js - implémentation de jquerry - hide() show() ...
+    - mise en place du .innerHTML pour les totaux.
+    //TODO : - griser "VALIDER" tant que tous les champs ne sont pas remplis .
+    //TODO : - griser les champs après validation.
+    //TODO : - voir pour placer les informations pour l'introduction en dehors de la div principale
 }
 
-15/01/2019 - v.2.0 {
+16/01/2019 - v.1.1 {
+    - mise en place du data mapping dans le script et finalisation des fontions de ce dernier.
+    - manque encore finalisation du contenue brut et mise en forme de celle-ci si nécessaire.
+    //TODO supprimer ombres buttons + backgroud-color.
+}
+
+15/01/2019 - v.1.0 {
     - première idée du rendu finale.
     - toute la nomenclature est à réaliser.
-    - les values des selectors ne correspondent encore à rien mais permette de donner un rendu avec l'alert du score finale ... à voir
+    - les values des selectors ne correspondent encore à rien mais permette de donner un rendu avec l'alert du score finale ... 
 }
 
 -
