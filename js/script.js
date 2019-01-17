@@ -145,6 +145,8 @@ $(document).ready(function() {
     $( "#button1" ).click(function() {
         $( "#block3" ).show( "slow" );
         $( "#button1" ).hide( "slow" );
+        $( "#loading" ).hide( "slow" );
+
     });
         
 });
