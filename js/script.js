@@ -91,10 +91,10 @@ let dataMapping = {
 /* --- FONCTIONS --- */
     
 function valeur_matin() {
-    select = document.getElementById("matin");
-    choice = select.selectedIndex;
-    valeur = select.options[choice].value;
-    let data = dataMapping.matin[select.options[choice].value];
+    let select = document.getElementById("matin");
+    let choice = select.selectedIndex;
+    let valeur = select.options[choice].value;
+    let data = dataMapping.matin[valeur];
     total_calories += parseFloat(data.calories);
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
@@ -103,10 +103,10 @@ function valeur_matin() {
 
 
 function valeur_midi() {
-    select = document.getElementById("midi");
-    choice = select.selectedIndex;
-    valeur = select.options[choice].value;
-    let data = dataMapping.midi[select.options[choice].value];
+    let select = document.getElementById("midi");
+    let choice = select.selectedIndex;
+    let valeur = select.options[choice].value;
+    let data = dataMapping.midi[valeur];
     total_calories += parseFloat(data.calories);
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
@@ -115,10 +115,10 @@ function valeur_midi() {
 
 
 function valeur_soir() {
-    select = document.getElementById("soir");
-    choice = select.selectedIndex;
-    valeur = select.options[choice].value;
-    let data = dataMapping.soir[select.options[choice].value];
+    let select = document.getElementById("soir");
+    let choice = select.selectedIndex;
+    let valeur = select.options[choice].value;
+    let data = dataMapping.soir[valeur];
     total_calories += parseFloat(data.calories);
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
