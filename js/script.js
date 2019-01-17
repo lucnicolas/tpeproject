@@ -130,21 +130,13 @@ function valeur_soir() {
 }
 
 
-
-//Fenête d'alert avec les données finales
-function affichage_totaux(){
-    alert("Calories : "+total_calories+"\nLipides : "+total_lipides+"\nGlucides : "+total_glucides+"\nProteines : "+total_proteines);
-    console.log("Tout va bien :)") 
-}
-
-
-
-
 $(document).ready(function() {
-
+    $( "#button0" ).click(function() {
+        $( "#description" ).hide( "slow" );
+        $( "#background" ).show( "slow" );
+    });
     $( "#button1" ).click(function() {
         $( "#block3" ).show( "slow" );
-        $( "#button1" ).hide( "slow" );
     });
         
 });
