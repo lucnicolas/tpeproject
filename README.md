@@ -50,3 +50,5 @@ git branch -D nom_branche
 # créer une nouvelle branche pour réaliser les nouvelles modifs
 git checkout -b nom_branche_suivante
 # etc ...
+
+git pull --rebase=preserve
