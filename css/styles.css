@@ -44,9 +44,9 @@ h2 {
     border-radius: 10px;     
 	-moz-border-radius: 10px;     
 	-webkit-border-radius: 5px;     
-	box-shadow: 8px 8px 12px #5d6d7e  ;     
-	-moz-box-shadow: 8px 8px 12px  #5d6d7e  ;     
-	-webkit-box-shadow: 8px 8px 12px  #5d6d7e  ;     
+    box-shadow: -1px 2px 10px 6px  black  ;
+    -moz-box-shadow: -1px 2px 10px 6px  black  ;   
+	-webkit-box-shadow: -1px 2px 10px 6px  black  ; 
 	font-weight: normal;     
     border: 2px groove #808080; 
     text-align: center;
@@ -62,9 +62,9 @@ h2 {
     border-radius: 10% / 40%;    
 	-moz-border-radius: 10% / 40%;    
 	-webkit-border-radius: 10% / 40%;     
-    box-shadow: -1px 2px 10px 3px  black  ;
-    -moz-box-shadow: -1px 2px 10px 3px  black  ;   
-	-webkit-box-shadow: -1px 2px 10px 3px  black  ;   
+    box-shadow: -1px 2px 10px 5px  gray  ;
+    -moz-box-shadow: -1px 2px 10px 5px  gray  ;   
+	-webkit-box-shadow: -1px 2px 10px 5px  gray  ;   
 	font-weight: normal;     
     border: 1px groove #808080; 
 }
