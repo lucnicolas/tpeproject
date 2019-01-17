@@ -6,8 +6,8 @@ APPLICATION FONCTIONNELLE
     - nouvelles mise en forme et nouvelles couleurs.
     - nouvelles fonctions js - implémentation de jquerry - hide() show() ...
     - mise en place du .innerHTML pour les totaux.
-    //TODO : - griser "VALIDER" tant que tous les champs ne sont pas remplis .
-    //TODO : - griser les champs après validation.
+    - impossible de valider le formulaire si les options ne sont pas sélectionné.
+    - les options se désactivent après submitting
     //TODO : - voir pour placer les informations pour l'introduction en dehors de la div principale
 }
 
