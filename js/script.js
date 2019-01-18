@@ -1,4 +1,5 @@
 /* --- VARIABLES --- */
+let checkForm
 //Déclaraction des variables totals
 let total_calories=0
 let total_lipides=0
@@ -141,10 +142,12 @@ function valeur_soir() {
     document.getElementById('pro').innerHTML = total_proteines;
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
         document.getElementById("button1").removeAttribute("disabled");
+        checkForm=true;
         console.log("Formulaire completé");
     } else {
         console.log("Formulaire incomplé");
     } 
+
 }
 
 
@@ -161,10 +164,19 @@ $(document).ready(function() {$
     }); 
 
     // When the user clicks on <span> (x), close the modal
-    $( ".close" ).click(function() {
-        $( ".modal" ).fadeOut( 400 );
-    });   
+    //$( ".close" ).click(function() {
+     //   $( ".modal" ).fadeOut( 400 );
+    //});   
+    $("#button1").hover(function(){
+        if (checkForm===true){
+        $(this).css("background", "black");
+        $(this).css("color", "white");
 
+        }}, function(){
+        $(this).css("background", "white");
+        $(this).css("color", "black");
+      });
+    
         
 });
 
