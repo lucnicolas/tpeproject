@@ -1,4 +1,5 @@
 /* --- VARIABLES --- */
+let checkForm
 //Déclaraction des variables totals
 let total_calories=0
 let total_lipides=0
@@ -100,14 +101,15 @@ function valeur_matin() {
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
     if (document.getElementById("midi").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
-        document.querySelector("button").removeAttribute("disabled");
+        document.getElementById("button1").removeAttribute("disabled");
+        checkForm=true;
         console.log("Formulaire completé");
 
     } else {
         console.log("Formulaire incomplé");
     } 
-
 }
+
 
 function valeur_midi() {
     let select = document.getElementById("midi");
@@ -119,11 +121,11 @@ function valeur_midi() {
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
-        document.querySelector("button").removeAttribute("disabled");
+        document.getElementById("button1").removeAttribute("disabled");
+        checkForm=true;
         console.log("Formulaire completé");
-
     } else {
-        console.log("Formulaire incomplé");
+        console.log("Formulaire incomplé")
     } 
 }
 
@@ -141,22 +143,68 @@ function valeur_soir() {
     document.getElementById('glu').innerHTML = total_glucides;
     document.getElementById('pro').innerHTML = total_proteines;
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
-        document.querySelector("button").removeAttribute("disabled");
+        document.getElementById("button1").removeAttribute("disabled");
+        checkForm=true;
         console.log("Formulaire completé");
     } else {
         console.log("Formulaire incomplé");
     } 
+
 }
 
-$(document).ready(function() {
 
+
+$(document).ready(function() {$
+    $( ".modal" ).hide();
+    $( "#merci" ).hide();
+
+    $( "#button0" ).click(function() {
+        $( "#description" ).hide( "slow" );
+    }); 
     $( "#button1" ).click(function() {
         $( "#block3" ).show( "slow" );
         $( "#button1" ).hide( "slow" );
         $( "#loading" ).hide( "slow" );
-        document.getElementById("matin").setAttribute("disabled", "")
-        document.getElementById("midi").setAttribute("disabled", "")
-        document.getElementById("soir").setAttribute("disabled", "")
+    }); 
+
+    $(document).click(function() {
+        if (checkForm ===true){
+            $("#merci").show("400");
+        }
     });
+
+    // Get the modal
+let modal = document.getElementById('description');
+
+// Get the button that opens the modal
+let btn = document.getElementById("button1");
+
+// Get the <span> element that closes the modal
+let span = document.getElementsByClassName("close")[0];
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+    // When the user clicks on <span> (x), close the modal
+    $( ".close" ).click(function() {
+        $( ".modal" ).fadeOut( 400 );
+    });   
+    
+    $("#button1").hover(function(){
+        if (checkForm===true){
+        $(this).css("background", "black");
+        $(this).css("color", "white");
+
+        }}, function(){
+        $(this).css("background", "white");
+        $(this).css("color", "black");
+      });
+    
+        
 });
 
