@@ -155,7 +155,9 @@ function valeur_soir() {
 
 
 $(document).ready(function() {$
-    $( ".modal" ).fadeOut( 1 );
+    $( ".modal" ).hide();
+    $( "#merci" ).hide();
+
     $( "#button0" ).click(function() {
         $( "#description" ).hide( "slow" );
     }); 
@@ -164,6 +166,12 @@ $(document).ready(function() {$
         $( "#button1" ).hide( "slow" );
         $( "#loading" ).hide( "slow" );
     }); 
+
+    $(document).click(function() {
+        if (checkForm ===true){
+            $("#merci").show("400");
+        }
+    });
 
     // Get the modal
 let modal = document.getElementById('description');
