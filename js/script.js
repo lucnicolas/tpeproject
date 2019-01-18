@@ -127,7 +127,6 @@ function valeur_midi() {
     } 
 }
 
-
 function valeur_soir() {
     let select = document.getElementById("soir");
     let choice = select.selectedIndex;
