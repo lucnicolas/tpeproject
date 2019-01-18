@@ -39,6 +39,7 @@ h2 {
 #block2 {
     background-color: #283747 ;
     padding: 0px 40px 40px 50px;
+    margin-top: -20px;
     width: 400px;
     float: right;
     border-radius: 10px;     
@@ -53,7 +54,7 @@ h2 {
 }
 
 #block3 {
-    background-color: black    ;
+    background-color: #08362d;
     margin: 330px 0px;
     padding: 0px 0px 50px 50px;
     width: 915px;
@@ -62,9 +63,9 @@ h2 {
     border-radius: 10% / 40%;    
 	-moz-border-radius: 10% / 40%;    
 	-webkit-border-radius: 10% / 40%;     
-    box-shadow: -1px 2px 10px 5px  gray  ;
-    -moz-box-shadow: -1px 2px 10px 5px  gray  ;   
-	-webkit-box-shadow: -1px 2px 10px 5px  gray  ;   
+    box-shadow: -1px 2px 10px 5px   #34495e    ;
+    -moz-box-shadow: -1px 2px 10px 5px   #34495e    ;   
+	-webkit-box-shadow: -1px 2px 10px 5px    #34495e    ;   
 	font-weight: normal;     
     border: 1px groove #808080; 
 }
@@ -73,7 +74,7 @@ h2 {
     display: block;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 170px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -96,6 +97,8 @@ h2 {
 #button0 {
     background: black;
     color: white;
+    width: 100%;
+    margin-top: 15px;
 }
 
 #button0:hover
