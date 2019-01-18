@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +12,18 @@
 
 </head>
 <body>
+        <div id="description">
+                <div class="modal-content">
+                    <h1>Le TITRE du document ...</h1>
+                    <p>Un paragraphe à mettre en forme</p>
+                    <h2>Ce programme à été conçu dans le cadre du TPE sur l'obésité.</h2>
+                    <i> In lobortis porta mauris. Fusce lacus dolor, ultricies in quam at, venenatis consequat neque. Phasellus vestibulum cursus ex. Suspendisse potenti. Quisque nunc lacus, bibendum vitae lectus non, pharetra porttitor nibh. In id eros aliquet, lobortis lorem a, rutrum ex. Suspendisse at magna sed tortor eleifend ornare ac in urna. Sed tempor malesuada justo nec pretium. Ut ultrices vehicula nunc, sed scelerisque sem. </i>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis et arcu et ultrices. Fusce ullamcorper sagittis tortor, quis aliquet nisl hendrerit a. Vivamus et ligula sed sapien facilisis commodo eu ac augue. Donec pulvinar quam ac posuere ullamcorper. Proin cursus mauris in erat porta, non placerat quam tempor. Integer at turpis augue. Cras ex libero, hendrerit vitae velit in, vehicula semper ante. In nisl neque, semper et tortor at, aliquet suscipit dolor. Suspendisse potenti. Nullam euismod risus molestie magna fermentum vehicula. Morbi ac augue rhoncus, cursus est non, posuere dolor. Cras vulputate nulla dolor, a cursus nisl blandit non. </p>
+                    <button class="button" id="button0">Fermer</button>
+
+                </div>
+        </div>
+
     <div id="background">
         <div id="block1">
             <h1>Le TITRE du document ...</h1>
@@ -22,7 +34,7 @@
         </div>
 
 
-        <div id="block2">
+    <div id="block2">
             <h1>Le Formulaire </br> de saisi des menus</h1>
         </br>
             <p><i>Votre repas du matin : </i>
@@ -71,10 +83,10 @@
                 <h3>Lipides : <a id='lip'></a></h3>
                 <h3>Glucides : <a id='glu'></a></h3>
                 <h3>Protéines : <a id='pro'></a></h3>
-
             </div>
         </div>
 
+<<<<<<< HEAD
         <div id="loading" class="loading">
                 <div class="obj"></div>
                 <div class="obj"></div>
@@ -87,10 +99,36 @@
             </div>
 
 
+=======
+>>>>>>> branch-temporaire
     </div>
     <script>
+// Get the modal
+var modal = document.getElementById('myModal');
 
-    </script>
+// Get the button that opens the modal
+var btn = document.getElementById("button1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+/* btn.onclick = function() {
+  modal.style.display = "block";
+} */
+
+// When the user clicks on <span> (x), close the modal
+/* span.onclick = function() {
+  modal.style.display = "none";
+} */
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 
 </body>

@@ -1,6 +1,7 @@
 # tpeproject
 11th school project - TPE Obesity
 
+<<<<<<< HEAD
 17/01/2019 - v.1.2 {
 APPLICATION FONCTIONNELLE
     - nouvelles mise en forme et nouvelles couleurs.
@@ -22,6 +23,14 @@ APPLICATION FONCTIONNELLE
     - toute la nomenclature est à réaliser.
     - les values des selectors ne correspondent encore à rien mais permette de donner un rendu avec l'alert du score finale ... à voir
 }
+=======
+17/01/2019 - v.2.0 {
+INITIALISATION DE LA V2
+    - 
+    //TODO :
+}
+
+>>>>>>> branch-temporaire
 
 -
 -

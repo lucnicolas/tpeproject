@@ -100,12 +100,22 @@ function valeur_matin() {
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
     if (document.getElementById("midi").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
+<<<<<<< HEAD
         document.querySelector("button").removeAttribute("disabled");
         console.log("Formulaire completé");
 
     } else {
         console.log("Formulaire incomplé");
     } 
+=======
+        document.getElementById("button1").removeAttribute("disabled")
+        console.log("Formulaire completé")
+
+    } else {
+        console.log("Formulaire incomplé")
+    } 
+}
+>>>>>>> branch-temporaire
 
 }
 
@@ -118,9 +128,20 @@ function valeur_midi() {
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
+<<<<<<< HEAD
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
         document.querySelector("button").removeAttribute("disabled");
         console.log("Formulaire completé");
+=======
+    if (document.getElementById("soir").selectedIndex != 0) {    
+        document.getElementById("button1").removeAttribute("disabled")
+        console.log("Formulaire completé")
+
+    } else {
+        console.log("Formulaire incomplé")
+    } 
+}
+>>>>>>> branch-temporaire
 
     } else {
         console.log("Formulaire incomplé");
@@ -141,6 +162,7 @@ function valeur_soir() {
     document.getElementById('glu').innerHTML = total_glucides;
     document.getElementById('pro').innerHTML = total_proteines;
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
+<<<<<<< HEAD
         document.querySelector("button").removeAttribute("disabled");
         console.log("Formulaire completé");
     } else {
@@ -158,5 +180,31 @@ $(document).ready(function() {
         document.getElementById("midi").setAttribute("disabled", "")
         document.getElementById("soir").setAttribute("disabled", "")
     });
+=======
+        document.getElementById("button1").removeAttribute("disabled")
+        console.log("Formulaire completé")
+    } else {
+        console.log("Formulaire incomplé")
+    } 
+}
+
+
+$(document).ready(function() {$
+    $( ".modal" ).fadeOut( 1 );
+    $( "#button0" ).click(function() {
+        $( "#description" ).hide( "slow" );
+    });
+// When the user clicks the button, open the modal 
+   $( "#button1" ).click(function() {
+        $( ".modal" ).fadeIn( 400 );
+    });    
+
+    // When the user clicks on <span> (x), close the modal
+    $( ".close" ).click(function() {
+        $( ".modal" ).fadeOut( 400 );
+    });   
+
+        
+>>>>>>> branch-temporaire
 });
 
