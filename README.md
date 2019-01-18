@@ -26,9 +26,6 @@ APPLICATION FONCTIONNELLE
 -
 -
 -
--
--
--
 
 INSTRUCTION TRAVAIL COLABORATIF PROJET GIT :
 # en étant sur master, récupérer d'abord la dernière version de master
