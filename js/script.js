@@ -100,24 +100,14 @@ function valeur_matin() {
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
     if (document.getElementById("midi").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
-<<<<<<< HEAD
         document.querySelector("button").removeAttribute("disabled");
         console.log("Formulaire completé");
 
     } else {
         console.log("Formulaire incomplé");
     } 
-=======
-        document.getElementById("button1").removeAttribute("disabled")
-        console.log("Formulaire completé")
-
-    } else {
-        console.log("Formulaire incomplé")
-    } 
 }
->>>>>>> branch-temporaire
 
-}
 
 function valeur_midi() {
     let select = document.getElementById("midi");
@@ -128,23 +118,11 @@ function valeur_midi() {
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
-<<<<<<< HEAD
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
         document.querySelector("button").removeAttribute("disabled");
         console.log("Formulaire completé");
-=======
-    if (document.getElementById("soir").selectedIndex != 0) {    
-        document.getElementById("button1").removeAttribute("disabled")
-        console.log("Formulaire completé")
-
     } else {
         console.log("Formulaire incomplé")
-    } 
-}
->>>>>>> branch-temporaire
-
-    } else {
-        console.log("Formulaire incomplé");
     } 
 }
 
@@ -162,7 +140,6 @@ function valeur_soir() {
     document.getElementById('glu').innerHTML = total_glucides;
     document.getElementById('pro').innerHTML = total_proteines;
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
-<<<<<<< HEAD
         document.querySelector("button").removeAttribute("disabled");
         console.log("Formulaire completé");
     } else {
@@ -180,13 +157,6 @@ $(document).ready(function() {
         document.getElementById("midi").setAttribute("disabled", "")
         document.getElementById("soir").setAttribute("disabled", "")
     });
-=======
-        document.getElementById("button1").removeAttribute("disabled")
-        console.log("Formulaire completé")
-    } else {
-        console.log("Formulaire incomplé")
-    } 
-}
 
 
 $(document).ready(function() {$
@@ -196,6 +166,7 @@ $(document).ready(function() {$
     });
 // When the user clicks the button, open the modal 
    $( "#button1" ).click(function() {
+       console.log("ok");
         $( ".modal" ).fadeIn( 400 );
     });    
 
@@ -205,6 +176,5 @@ $(document).ready(function() {$
     });   
 
         
->>>>>>> branch-temporaire
 });
-
+});
