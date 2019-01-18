@@ -157,9 +157,12 @@ function valeur_soir() {
 $(document).ready(function() {$
     $( ".modal" ).hide();
     $( "#merci" ).hide();
+    $(".loading").hide();
 
     $( "#button0" ).click(function() {
         $( "#description" ).hide( "slow" );
+        $(".loading").show("slow");
+
     }); 
     $( "#button1" ).click(function() {
         $( "#block3" ).show( "slow" );
