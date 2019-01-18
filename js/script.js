@@ -102,6 +102,7 @@ function valeur_matin() {
     total_proteines += parseFloat(data.proteines);
     if (document.getElementById("midi").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
         document.getElementById("button1").removeAttribute("disabled");
+        checkForm=true;
         console.log("Formulaire completé");
 
     } else {
@@ -121,6 +122,7 @@ function valeur_midi() {
     total_proteines += parseFloat(data.proteines);
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
         document.getElementById("button1").removeAttribute("disabled");
+        checkForm=true;
         console.log("Formulaire completé");
     } else {
         console.log("Formulaire incomplé")
