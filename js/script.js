@@ -150,13 +150,21 @@ function valeur_soir() {
 }
 
 
-$(document).ready(function() {
+$(document).ready(function() {$
+    $( ".modal" ).fadeOut( 1 );
     $( "#button0" ).click(function() {
         $( "#description" ).hide( "slow" );
     });
-    $( "#button1" ).click(function() {
-        $( "#block3" ).show( "slow" );
-    });
+// When the user clicks the button, open the modal 
+   $( "#button1" ).click(function() {
+        $( ".modal" ).fadeIn( 400 );
+    });    
+
+    // When the user clicks on <span> (x), close the modal
+    $( ".close" ).click(function() {
+        $( ".modal" ).fadeOut( 400 );
+    });   
+
         
 });
 
