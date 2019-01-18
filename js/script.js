@@ -100,7 +100,7 @@ function valeur_matin() {
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
     if (document.getElementById("midi").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
-        document.querySelector("button").removeAttribute("disabled");
+        document.getElementById("button1").removeAttribute("disabled");
         console.log("Formulaire completé");
 
     } else {
@@ -119,7 +119,7 @@ function valeur_midi() {
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
-        document.querySelector("button").removeAttribute("disabled");
+        document.getElementById("button1").removeAttribute("disabled");
         console.log("Formulaire completé");
     } else {
         console.log("Formulaire incomplé")
@@ -140,35 +140,25 @@ function valeur_soir() {
     document.getElementById('glu').innerHTML = total_glucides;
     document.getElementById('pro').innerHTML = total_proteines;
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
-        document.querySelector("button").removeAttribute("disabled");
+        document.getElementById("button1").removeAttribute("disabled");
         console.log("Formulaire completé");
     } else {
         console.log("Formulaire incomplé");
     } 
 }
 
-$(document).ready(function() {
-
-    $( "#button1" ).click(function() {
-        $( "#block3" ).show( "slow" );
-        $( "#button1" ).hide( "slow" );
-        $( "#loading" ).hide( "slow" );
-        document.getElementById("matin").setAttribute("disabled", "")
-        document.getElementById("midi").setAttribute("disabled", "")
-        document.getElementById("soir").setAttribute("disabled", "")
-    });
 
 
 $(document).ready(function() {$
     $( ".modal" ).fadeOut( 1 );
     $( "#button0" ).click(function() {
         $( "#description" ).hide( "slow" );
-    });
-// When the user clicks the button, open the modal 
-   $( "#button1" ).click(function() {
-       console.log("ok");
-        $( ".modal" ).fadeIn( 400 );
-    });    
+    }); 
+    $( "#button1" ).click(function() {
+        $( "#block3" ).show( "slow" );
+        $( "#button1" ).hide( "slow" );
+        $( "#loading" ).hide( "slow" );
+    }); 
 
     // When the user clicks on <span> (x), close the modal
     $( ".close" ).click(function() {
@@ -177,4 +167,4 @@ $(document).ready(function() {$
 
         
 });
-});
+
