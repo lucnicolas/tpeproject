@@ -190,12 +190,15 @@ $(document).ready(function() {
             document.getElementById('lip').innerHTML = total_lipides;
             document.getElementById('glu').innerHTML = total_glucides;
             document.getElementById('pro').innerHTML = total_proteines;
-            if (total_calories < 10) {
+            if (total_calories > 10) {
                 document.getElementById('txt-res').innerHTML = "Vous semblez manger équilibré";
                 document.getElementById('rouge').style.display = "none";
+                document.getElementById('resultat').style.backgroundColor = "#145a32";
             } else {
                 document.getElementById('txt-res').innerHTML = "Vous ne semblez pas manger équilibré";
                 document.getElementById('vert').style.display = "none";
+                document.getElementById('resultat').style.backgroundColor = "#641e16";
+
 
             
             }
