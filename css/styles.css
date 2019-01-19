@@ -13,12 +13,26 @@ h2 {
     font-variant: small-caps; 
 }
 
+h3 {
+    display: inline;
+}
+
+ul {
+    position: absolute;
+}
+
+img {
+    height: 150px; 
+    width: 150px;
+    margin: -63px 0px 0px 380px;
+}
+
 #component-principal {
     background-color:  #17202a  ;
     margin: auto;
     padding: 50px 50px 50px 50px;
     width: 1160px;
-    height: 39em;
+    height: 625px;
     border-radius: 10px;     
 	-moz-border-radius: 10px;     
 	-webkit-border-radius: 10px;     
@@ -30,9 +44,11 @@ h2 {
 }
 
 #description {
+    
     position: absolute;
     width: 650px;
     margin: auto;
+    margin-top: -35px;
 }
 
 #formulaire {

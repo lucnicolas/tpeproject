@@ -94,6 +94,8 @@ let dataMapping = {
 
 /* --- FONCTIONS --- */
 
+
+
 /* Fonctions de calculs des totaux */
 //Elles calculent les totaux en fonction des choix de lutilisateur et vérifient si le formulaire est complété
 function valeur_matin() {
@@ -137,10 +139,6 @@ function valeur_soir() {
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
     //vérifie si les autres champs sont sélectionné ou non
-    document.getElementById('cal').innerHTML = total_calories;
-    document.getElementById('lip').innerHTML = total_lipides;
-    document.getElementById('glu').innerHTML = total_glucides;
-    document.getElementById('pro').innerHTML = total_proteines;
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
         document.getElementById("valider").removeAttribute("disabled");
         checkForm=true;
@@ -183,11 +181,24 @@ $(document).ready(function() {
         $( "#modal" ).fadeOut( 400 );
     });   
     
-    //Quand l'utilisateur se trouve sur le bouton #valider, si le formulaire est complété, anime le bouton #fermer 
+    //Quand l'utilisateur se trouve sur le bouton #valider, si le formulaire est complété, anime le bouton #fermer et envoie les les valeurs totales dans le #resultat
     $("#valider").hover(function(){
         if (checkForm===true){
             $(this).css("background-color", "black");
             $(this).css("color", "white");
+            document.getElementById('cal').innerHTML = total_calories;
+            document.getElementById('lip').innerHTML = total_lipides;
+            document.getElementById('glu').innerHTML = total_glucides;
+            document.getElementById('pro').innerHTML = total_proteines;
+            if (total_calories < 10) {
+                document.getElementById('txt-res').innerHTML = "Vous semblez manger équilibré";
+                document.getElementById('rouge').style.display = "none";
+            } else {
+                document.getElementById('txt-res').innerHTML = "Vous ne semblez pas manger équilibré";
+                document.getElementById('vert').style.display = "none";
+
+            
+            }
         }}, function(){
             $(this).css("background", "white");
             $(this).css("color", "black");
