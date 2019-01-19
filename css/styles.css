@@ -269,3 +269,7 @@ cursor: pointer;
     #loading {display: none;}
     .footer {display: none;}
 }
+@media all and (max-height:830px) {
+    .footer {display: none;}
+
+}
