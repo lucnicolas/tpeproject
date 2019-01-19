@@ -33,7 +33,7 @@ let dataMapping = {
             calories: "894",
             lipides: "31",
             glucides: "147",
-            proteines: "31"
+            proteines: "9"
         }
     },
     midi: {
@@ -52,7 +52,7 @@ let dataMapping = {
         "option7": {
             calories: "894",
             lipides: "31",
-            glucides: "127",
+            glucides: "146",
             proteines: "9"
         },
         "option8": {
@@ -64,28 +64,28 @@ let dataMapping = {
     },
     soir: {
         "option9": {
-            calories: "403",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "727",
+            lipides: "83",
+            glucides: "35",
+            proteines: "20"
         },
         "option10": {
-            calories: "298",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "813",
+            lipides: "49",
+            glucides: "60",
+            proteines: "29"
         },
         "option11": {
-            calories: "330",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "361",
+            lipides: "9",
+            glucides: "55",
+            proteines: "10"
         },
         "option12": {
-            calories: "509",
-            lipides: "20",
-            glucides: "14",
-            proteines: "-100"
+            calories: "588",
+            lipides: "19",
+            glucides: "46",
+            proteines: "27"
         }
     }
 };
@@ -203,7 +203,7 @@ $(document).ready(function() {
             document.getElementById('lip').innerHTML = total_lipides;
             document.getElementById('glu').innerHTML = total_glucides;
             document.getElementById('pro').innerHTML = total_proteines;
-            if (total_calories > 0 && total_lipides > 0 && total_glucides > 0 && total_proteines > 0) {
+            if (2100 > total_calories > 2500 && 73 > total_lipides > 83 && 285 > total_glucides > 296 && 112 > total_proteines > 122) {
                 document.getElementById('txt-res').innerHTML = 'Vous semblez manger équilibré';
                 document.getElementById('rouge').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#145a32";
