@@ -168,6 +168,7 @@ $(document).ready(function() {
         $( "#resultat" ).show( "slow" );
         $( "#valider" ).hide( "slow" );
         $( "#loading" ).hide( "slow" );
+        $( "select").attr("disabled", true);
     }); 
 
     //Quand l'utilisateur clic quelque part sur la page, si le formulaire est complété, montre le message #merci
@@ -208,7 +209,7 @@ $(document).ready(function() {
                 document.getElementById('rouge').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#145a32";
             } else {
-                document.getElementById('txt-res').innerHTML = 'Vous ne semblez pas manger équilibré <i class="fas fa-angry"></i>';
+                document.getElementById('txt-res').innerHTML = 'Vous ne semblez pas manger équilibré';
                 document.getElementById('vert').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#641e16";
             }
