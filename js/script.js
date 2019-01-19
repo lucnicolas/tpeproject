@@ -186,9 +186,12 @@ $(document).ready(function() {
     //Quand l'utilisateur se trouve sur le bouton #valider, si le formulaire est complété, anime le bouton #fermer 
     $("#valider").hover(function(){
         if (checkForm===true){
-        $(this).css("component-principal", "black");
-        $(this).css("color", "white");
-        }});
+            $(this).css("background-color", "black");
+            $(this).css("color", "white");
+        }}, function(){
+            $(this).css("background", "white");
+            $(this).css("color", "black");
+      });
     
         
 });
