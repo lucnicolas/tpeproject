@@ -8,32 +8,32 @@ let total_lipides=0
 let total_glucides=0
 let total_proteines=0
 
-//Déclaration des objets qui stockent les valeurs de chaque option
+//Déclaration des objets qui stockent les valeurs de chaque option //j'ai changé ici les valeurs de matin
 let dataMapping = {
     matin: {
         "option1": {
-            calories: "250",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "254",
+            lipides: "15",
+            glucides: "19,7",
+            proteines: "12,5"
         },
         "option2": {
-            calories: "800",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "396",
+            lipides: "15,5",
+            glucides: "54,3",
+            proteines: "8,6"
         },
         "option3": {
-            calories: "280",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "247",
+            lipides: "11,8",
+            glucides: "30,6",
+            proteines: "4,6"
         },
         "option4": {
-            calories: "555",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "894",
+            lipides: "31",
+            glucides: "146,6",
+            proteines: "31"
         }
     },
     midi: {
