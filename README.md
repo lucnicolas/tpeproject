@@ -1,6 +1,25 @@
 # tpeproject
 11th school project - TPE Obesity
 
+ECHEANCE 22/01/19
+
+19/01/2019 - v.1.4 {
+    - mise à jour de la data
+    - rédaction du contenu
+    - création d'un footer + quelques animations
+    - mise en forme de l'espace résultat :
+        # totaux sous forme de liste
+        # background-color change en fonction du résultat
+        # ajout img pouce vert et pouce rouge
+    - les selects se désactivent après validation du formulaire
+    - mise en place d'un design un minimum responsive
+    - nettoyage des scripts + ajout des commentaires
+    - ajout d'une favicon et d'icons diverses
+    - correction bugs animation et autres
+    //TODO : - finalisation de la mise en page du nouveau contenue
+    //TODO : - optimisation maximale du code
+}
+
 18/01/2019 - v.1.3 {
     - nouvelles fonctionnalités tant que le formulaire n'est pas complété :
         # suppression de l'animation du bouton "Valider".
