@@ -168,6 +168,7 @@ $(document).ready(function() {
         $( "#resultat" ).show( "slow" );
         $( "#valider" ).hide( "slow" );
         $( "#loading" ).hide( "slow" );
+        $( "select").attr("disabled", true);
     }); 
 
     //Quand l'utilisateur clic quelque part sur la page, si le formulaire est complété, montre le message #merci
