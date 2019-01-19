@@ -14,52 +14,52 @@ let dataMapping = {
         "option1": {
             calories: "254",
             lipides: "15",
-            glucides: "19,7",
-            proteines: "12,5"
+            glucides: "20",
+            proteines: "12"
         },
         "option2": {
             calories: "396",
-            lipides: "15,5",
-            glucides: "54,3",
-            proteines: "8,6"
+            lipides: "15",
+            glucides: "54",
+            proteines: "9"
         },
         "option3": {
             calories: "247",
-            lipides: "11,8",
-            glucides: "30,6",
-            proteines: "4,6"
+            lipides: "12",
+            glucides: "31",
+            proteines: "5"
         },
         "option4": {
             calories: "894",
             lipides: "31",
-            glucides: "146,6",
+            glucides: "147",
             proteines: "31"
         }
     },
     midi: {
         "option5": {
-            calories: "332",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "456",
+            lipides: "12",
+            glucides: "61",
+            proteines: "27"
         },
         "option6": {
-            calories: "101",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "862",
+            lipides: "48",
+            glucides: "37",
+            proteines: "52"
         },
         "option7": {
-            calories: "902",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "894",
+            lipides: "31",
+            glucides: "127",
+            proteines: "9"
         },
         "option8": {
-            calories: "654",
-            lipides: "20",
-            glucides: "14",
-            proteines: "33"
+            calories: "547",
+            lipides: "39",
+            glucides: "28",
+            proteines: "29"
         }
     },
     soir: {
