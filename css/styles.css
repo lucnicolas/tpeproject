@@ -203,7 +203,8 @@ color: black;
   @media all and (max-width:1600px){
       #background {height: 100%;}
       #block1 {position: initial; width: 100%;}
-      #block2 {float: none;}
+      #block2 {float: none; margin-top: 50px;}
       #block3 {margin: 10px;}
+      #loading {display: none;}
 
   }
