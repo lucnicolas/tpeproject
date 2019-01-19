@@ -27,6 +27,15 @@ img {
     margin: -63px 0px 0px 380px;
 }
 
+#flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
 #component-principal {
     background-color:  #17202a  ;
     margin: auto;
@@ -66,6 +75,11 @@ img {
 	font-weight: normal;     
     border: 2px groove #808080; 
     text-align: center;
+}
+
+#form-selects {
+    text-align: right;
+    margin-right: 10%; 
 }
 
 #resultat {
@@ -122,7 +136,7 @@ color: black;
 
 #valider {
     margin: 0 30px;
-    background: white;
+    background:#abb2b9  ;
     color: black;
 }
 
@@ -215,6 +229,37 @@ text-decoration: none;
 cursor: pointer;
 }
 
+.footer {
+    background-color: #000;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    border-top: 2px solid white;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+
+}
+#footer-marie {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    
+}
+#footer-luc {
+    font-size: 70%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#footer-git {
+    font-size: 300%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
 /* Responive Design */
 @media all and (max-width:1300px) {
     #component-principal {height: 100%; width: 75%;}
@@ -222,4 +267,5 @@ cursor: pointer;
     #formulaire {float: none; margin-top: 50px;}
     #resultat {margin-top: 40px;}
     #loading {display: none;}
+    .footer {display: none;}
 }

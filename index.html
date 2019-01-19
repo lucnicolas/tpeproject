@@ -8,16 +8,27 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
+    <footer class="footer">
+    <div id="footer-marie">Réalisé par l'équipe TPE <br>Lorie QUIBLIER - Salilé GILBERT-MINER - Marie NICOLAS<br>Copyright 2019. All Rights Reserved.<br><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i></div>
+    <div id="footer-luc"><br><i class="fas fa-less-than"></i> <strong>Luc</strong> <i class="fas fa-greater-than"></i><br>@IntechSudNîmes </div>
+    <div id="footer-git"><a href="https://github.com/marienls/tpeproject"><i class="fab fa-github"></i></a></div>
+    </footer>
     <!-- COMPONENT MODALE -->
     <div id="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
+<<<<<<< HEAD
             <h1>APPLICATION IN LOBORTIS PORTA</h1>
             <p>Réalisé par Lorie QUIBLIER, Salomé GIBERT-MINAIRE et Marie NICOLAS.</p>
+=======
+            <h1><i class="fas fa-project-diagram"></i> APPLICATION IN LOBORTIS PORTA <i id="flip" class="fas fa-project-diagram"></i></h1>
+            <p>Réalisé par Lorie QUIBLIER, Salilé GILBERT-MINER et Marie NICOLAS.</p>
+>>>>>>> fb3af04224f64259043d7c62a0654805a5874d84
             <h2>Ce programme à été conçu dans le cadre du TPE sur l'obésité.</h2>
             <p>Nous avons voulu, sous forme ludique, sensibiliser un public sur les conséquences d'une mauvaise alimentation, et nos réels besoin nutritionnels. </p>
             <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mollis et arcu et ultrices. Fusce ullamcorper sagittis tortor, quis aliquet nisl hendrerit a. Vivamus et ligula sed sapien facilisis commodo eu ac augue. Donec pulvinar quam ac posuere ullamcorper. Proin cursus mauris in erat porta, non placerat quam tempor. Integer at turpis augue. Cras ex libero, hendrerit vitae velit in, vehicula semper ante. In nisl neque, semper et tortor at, aliquet suscipit dolor. Suspendisse potenti. Nullam euismod risus molestie magna fermentum vehicula. Morbi ac augue rhoncus, cursus est non, posuere dolor. Cras vulputate nulla dolor, a cursus nisl blandit non. </p>
@@ -29,7 +40,7 @@
     <div id="component-principal">
         <!-- SOUS-COMPONENT DESCRIPTION-->
         <div id="description">
-            <h1>Vos repas sont ils équilibrés ?</h1>
+            <h1><i class="fas fa-utensils"></i> Vos repas sont ils équilibrés ?</h1>
             <p>Un paragraphe à mettre en forme</p>
             <h2>Ce programme à été conçu dans le cadre du TPE sur l'obésité.</h2>
             <i> In lobortis porta mauris. Fusce lacus dolor, ultricies in quam at, venenatis consequat neque. Phasellus vestibulum cursus ex. Suspendisse potenti. Quisque nunc lacus, bibendum vitae lectus non, pharetra porttitor nibh. In id eros aliquet, lobortis lorem a, rutrum ex. Suspendisse at magna sed tortor eleifend ornare ac in urna. Sed tempor malesuada justo nec pretium. Ut ultrices vehicula nunc, sed scelerisque sem. </i>
@@ -41,35 +52,37 @@
             <h1>Le Formulaire </br> de saisie des menus</h1>
             <h4>Saisissez les menus correspondant ci-dessous :</h4>
             </br>
-            <p><i>Votre repas du matin : </i>
-            <select name="matin" size="1" id="matin" onchange="valeur_matin();">
-                <option selected disabled>Choisir une option</option>
-                <option value="option1">Menu 1</option>
-                <option value="option2">Menu 2</option>
-                <option value="option3">Menu 3</option>
-                <option value="option4">Menu 4</option>
-            </select></p>
-            </br>
-            </br>
-            <p><i>Votre repas du midi : </i>
-                <select name="midi" size="1" id="midi" onchange="valeur_midi();">
+            <div id="form-selects">
+                <p><i><i class="fas fa-coffee"></i> Votre repas du matin : </i>
+                <select name="matin" size="1" id="matin" onchange="valeur_matin();">
                     <option selected disabled>Choisir une option</option>
-                    <option value="option5">Menu 5</option>
-                    <option value="option6">Menu 6</option>
-                    <option value="option7">Menu 7</option>
-                    <option value="option8">Menu 8</option>
-                </select>
-            </p>
-            </br>
-            </br>
-            <p><i>Votre repas du soir : </i>
-                <select name="soir" size="1" id="soir" onchange="valeur_soir();">
-                    <option selected disabled>Choisir une option</option>
-                    <option value="option9">Menu 9</option>
-                    <option value="option10">Menu 10</option>
-                    <option value="option11">Menu 11</option>
-                    <option value="option12">Menu 12</option>
+                    <option value="option1">Menu 1</option>
+                    <option value="option2">Menu 2</option>
+                    <option value="option3">Menu 3</option>
+                    <option value="option4">Menu 4</option>
                 </select></p>
+                </br>
+                </br>
+                <p><i><i class="fas fa-cookie-bite"></i> Votre repas du midi : </i>
+                    <select name="midi" size="1" id="midi" onchange="valeur_midi();">
+                        <option selected disabled>Choisir une option</option>
+                        <option value="option5">Menu 5</option>
+                        <option value="option6">Menu 6</option>
+                        <option value="option7">Menu 7</option>
+                        <option value="option8">Menu 8</option>
+                    </select>
+                </p>
+                </br>
+                </br>
+                <p><i><i class="fas fa-carrot"></i> Votre repas du soir : </i>
+                    <select name="soir" size="1" id="soir" onchange="valeur_soir();">
+                        <option selected disabled>Choisir une option</option>
+                        <option value="option9">Menu 9</option>
+                        <option value="option10">Menu 10</option>
+                        <option value="option11">Menu 11</option>
+                        <option value="option12">Menu 12</option>
+                    </select></p>
+            </div>
             </br>
             <h2 id="merci">Merci d'avoir répondu au questionnaire</h2>
             </br>
