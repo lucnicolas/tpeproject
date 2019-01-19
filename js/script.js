@@ -1,11 +1,14 @@
 /* --- VARIABLES --- */
-let checkForm
-//Déclaraction des variables totals
+
+let checkForm //variables qui stockera si oui ou non le formulaire est complété
+
+//Initialisation des totaux
 let total_calories=0
 let total_lipides=0
 let total_glucides=0
 let total_proteines=0
-//Déclaration du dataMapping
+
+//Déclaration des objets qui stockent les valeurs de chaque option
 let dataMapping = {
     matin: {
         "option1": {
@@ -90,122 +93,102 @@ let dataMapping = {
 
 
 /* --- FONCTIONS --- */
-    
+
+/* Fonctions de calculs des totaux */
+//Elles calculent les totaux en fonction des choix de lutilisateur et vérifient si le formulaire est complété
 function valeur_matin() {
-    let select = document.getElementById("matin");
-    let choice = select.selectedIndex;
-    let valeur = select.options[choice].value;
-    let data = dataMapping.matin[valeur];
+    let select = document.getElementById("matin"); //récupères le contenu de l'id
+    let choice = select.selectedIndex; //récupère l'index de l'option choisi
+    let valeur = select.options[choice].value; //récupère la valeur de celui-ci
+    let data = dataMapping.matin[valeur]; //récupère l'objet correspondant
+    //stock les valeurs des objets correspondants à celui selectionné
     total_calories += parseFloat(data.calories);
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
+    //vérifie si les autres champs sont sélectionné ou non
     if (document.getElementById("midi").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
-        document.getElementById("button1").removeAttribute("disabled");
+        document.getElementById("valider").removeAttribute("disabled");
         checkForm=true;
-        console.log("Formulaire completé");
-
-    } else {
-        console.log("Formulaire incomplé");
-    } 
-}
-
-
+}}}
 function valeur_midi() {
-    let select = document.getElementById("midi");
-    let choice = select.selectedIndex;
-    let valeur = select.options[choice].value;
-    let data = dataMapping.midi[valeur];
+    let select = document.getElementById("midi"); //récupères le contenu de l'id
+    let choice = select.selectedIndex; //récupère l'index de l'option choisi
+    let valeur = select.options[choice].value; //récupère la valeur de celui-ci
+    let data = dataMapping.midi[valeur]; //récupère l'objet correspondant
+    //stock les valeurs des objets correspondants à celui selectionné
     total_calories += parseFloat(data.calories);
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
+    //vérifie si les autres champs sont sélectionné ou non
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
-        document.getElementById("button1").removeAttribute("disabled");
+        document.getElementById("valider").removeAttribute("disabled");
         checkForm=true;
-        console.log("Formulaire completé");
-    } else {
-        console.log("Formulaire incomplé")
-    } 
-}
-
+}}}
 function valeur_soir() {
-    let select = document.getElementById("soir");
-    let choice = select.selectedIndex;
-    let valeur = select.options[choice].value;
-    let data = dataMapping.soir[valeur];
+    let select = document.getElementById("soir"); //récupères le contenu de l'id
+    let choice = select.selectedIndex; //récupère l'index de l'option choisi
+    let valeur = select.options[choice].value; //récupère la valeur de celui-ci
+    let data = dataMapping.soir[valeur]; //récupère l'objet correspondant
+    //stock les valeurs des objets correspondants à celui selectionné
     total_calories += parseFloat(data.calories);
     total_lipides += parseFloat(data.lipides);
     total_glucides += parseFloat(data.glucides);
     total_proteines += parseFloat(data.proteines);
+    //vérifie si les autres champs sont sélectionné ou non
     document.getElementById('cal').innerHTML = total_calories;
     document.getElementById('lip').innerHTML = total_lipides;
     document.getElementById('glu').innerHTML = total_glucides;
     document.getElementById('pro').innerHTML = total_proteines;
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
-        document.getElementById("button1").removeAttribute("disabled");
+        document.getElementById("valider").removeAttribute("disabled");
         checkForm=true;
-        console.log("Formulaire completé");
-    } else {
-        console.log("Formulaire incomplé");
-    } 
+}}}
 
-}
+/* Fonctions au chargement de la page */
+$(document).ready(function() {
+    $( "#merci" ).hide(); //cache le message #merci
+    $(".loading").hide(); //cache l'animation .loading
 
-
-
-$(document).ready(function() {$
-    $( "#merci" ).hide();
-    $(".loading").hide();
-
-    $( "#button0" ).click(function() {
-        $( "#description" ).hide( "slow" );
+    //Quand l'utilisateur clic sur le bouton #fermer, cache le #modal et lance l'animation .loading
+    $( "#fermer" ).click(function() { 
+        $( "#modal" ).hide( "slow" ); 
         $(".loading").show("slow");
 
     }); 
-    $( "#button1" ).click(function() {
-        $( "#block3" ).show( "slow" );
-        $( "#button1" ).hide( "slow" );
+    //Quand l'utilisateur sur le bouton #valider, cache l'animation #loading montre le #resultat
+    $( "#valider" ).click(function() { 
+        $( "#resultat" ).show( "slow" );
+        $( "#valider" ).hide( "slow" );
         $( "#loading" ).hide( "slow" );
     }); 
 
-    $(document).click(function() {
+    //Quand l'utilisateur clic quelque part sur la page, si le formulaire est complété, montre le message #merci
+    $(document).click(function() { 
         if (checkForm ===true){
             $("#merci").show("400");
         }
     });
 
-    // Get the modal
-let modal = document.getElementById('description');
+    //When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == document.getElementById('modal')) {
+        document.getElementById('modal').style.display = "none";
+    }
+    }
 
-// Get the button that opens the modal
-let btn = document.getElementById("button1");
-
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName("close")[0];
-
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-    // When the user clicks on <span> (x), close the modal
+    //when the user clicks on <span> (x), close the modal
     $( ".close" ).click(function() {
-        $( "#description" ).fadeOut( 400 );
+        $( "#modal" ).fadeOut( 400 );
     });   
     
-    $("#button1").hover(function(){
+    //Quand l'utilisateur se trouve sur le bouton #valider, si le formulaire est complété, anime le bouton #fermer 
+    $("#valider").hover(function(){
         if (checkForm===true){
-        $(this).css("background", "black");
+        $(this).css("component-principal", "black");
         $(this).css("color", "white");
-
-        }}, function(){
-        $(this).css("background", "white");
-        $(this).css("color", "black");
-      });
+        }});
     
         
 });

@@ -7,14 +7,13 @@ body {
 
 h1 {
     font-family: 'Crete Round', serif;
-
 }
 
 h2 {
     font-variant: small-caps; 
 }
 
-#background {
+#component-principal {
     background-color:  #17202a  ;
     margin: auto;
     padding: 50px 50px 50px 50px;
@@ -29,13 +28,14 @@ h2 {
 	font-weight: normal;     
 	border: 1px groove #808080; 
 }
-#block1 {
+
+#description {
     position: absolute;
     width: 36%;
     margin: auto;
 }
 
-#block2 {
+#formulaire {
     background-color: #283747 ;
     padding: 0px 40px 40px 50px;
     margin: auto;
@@ -52,7 +52,7 @@ h2 {
     text-align: center;
 }
 
-#block3 {
+#resultat {
     background-color: #08362d;
     padding: 0 0 50px 50px;
     margin-top: 380px;
@@ -69,7 +69,7 @@ h2 {
     border: 1px groove #808080; 
 }
 
-#description {
+#modal {
     display: block;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -80,7 +80,7 @@ h2 {
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
 }
 
 .button {
@@ -93,39 +93,37 @@ h2 {
     border-radius: 5px;
 }
 
-#button0 {
+#fermer {
     background: black;
     color: white;
     width: 100%;
     margin-top: 15px;
 }
 
-#button0:hover
-{
+#fermer:hover {
 background: white;
 color: black;
 }
 
-#button1 {
+#valider {
     margin: 0 30px;
     background: white;
     color: black;
 }
 
 
-#button2 {
+#reload {
         margin: 0 30px;
         background: black;
         color: white;
 }
 
-#button2:hover
-{
+#reload:hover {
     background: white;
     color: black;
 }
 
-.loading{
+.loading {
     position:absolute;
     margin: 500px 300px;
     transform:translate(-50%,-50%);
@@ -135,7 +133,7 @@ color: black;
 }
 
 
-.obj{
+.obj {
     width:15px;
     height:100px;
     background:#fff;
@@ -164,49 +162,49 @@ color: black;
     .obj:nth-child(8) {
         animation-delay: .7s;
     }
-@keyframes loading{
-    0%{
+@keyframes loading {
+    0% {
         height:0;
     }
-    50%{
+    50% {
         height:100px;
     }
-    100%{
+    100% {
         height:0;
     }
 }
 
   
-  /* Modal Content */
-  .modal-content {
-    color: #000;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 50%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+/* Modal Content */
+.modal-content {
+color: #000;
+background-color: #fefefe;
+margin: auto;
+padding: 20px;
+border: 1px solid #888;
+width: 50%;
+}
 
-  @media all and (max-width:1300px){
-      #background {height: 100%; width: 75%;}
-      #block1 {position: initial; width: 100%;}
-      #block2 {float: none; margin-top: 50px;}
-      #block3 {margin-top: 40px;}
-      #loading {display: none;}
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
 
-  }
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* Responive Design */
+@media all and (max-width:1300px) {
+    #component-principal {height: 100%; width: 75%;}
+    #description {position: initial; width: 100%;}
+    #formulaire {float: none; margin-top: 50px;}
+    #resultat {margin-top: 40px;}
+    #loading {display: none;}
+}
