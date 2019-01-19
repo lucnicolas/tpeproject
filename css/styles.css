@@ -18,7 +18,7 @@ h2 {
     background-color:  #17202a  ;
     margin: auto;
     padding: 50px 50px 50px 50px;
-    width: 80%;
+    width: 1160px;
     height: 39em;
     border-radius: 10px;     
 	-moz-border-radius: 10px;     
@@ -31,7 +31,7 @@ h2 {
 }
 #block1 {
     position: absolute;
-    width: 40%;
+    width: 36%;
     margin: auto;
 }
 
@@ -55,9 +55,10 @@ h2 {
 #block3 {
     background-color: #08362d;
     padding: 0 0 50px 50px;
-    width: 42em;
+    margin-top: 380px;
+    width: 40em;
     height: 11em;
-    position: relative;    
+    position: absolute;    
     border-radius: 10% / 40%;    
 	-moz-border-radius: 10% / 40%;    
 	-webkit-border-radius: 10% / 40%;     
@@ -126,13 +127,14 @@ color: black;
 
 .loading{
     position:absolute;
-    top:530px;
-    left: 550px;
+    margin: 500px 300px;
     transform:translate(-50%,-50%);
     height:40px;
     display:flex;
     align-items:center
 }
+
+
 .obj{
     width:15px;
     height:100px;
@@ -200,11 +202,11 @@ color: black;
     cursor: pointer;
   }
 
-  @media all and (max-width:1600px){
-      #background {height: 100%;}
+  @media all and (max-width:1300px){
+      #background {height: 100%; width: 75%;}
       #block1 {position: initial; width: 100%;}
       #block2 {float: none; margin-top: 50px;}
-      #block3 {margin: 10px;}
+      #block3 {margin-top: 40px;}
       #loading {display: none;}
 
   }
