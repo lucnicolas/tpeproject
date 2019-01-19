@@ -16,9 +16,9 @@ h2 {
 
 #background {
     background-color:  #17202a  ;
-    margin: 40px 25px 0 25px;
+    margin: auto;
     padding: 50px 50px 50px 50px;
-    width: 100em;
+    width: 80%;
     height: 39em;
     border-radius: 10px;     
 	-moz-border-radius: 10px;     
@@ -31,16 +31,15 @@ h2 {
 }
 #block1 {
     position: absolute;
-    width: 960px;
-    height: 400px;
-    margin: -40px 0;
+    width: 40%;
+    margin: auto;
 }
 
 #block2 {
     background-color: #283747 ;
     padding: 0px 40px 40px 50px;
-    margin-top: -20px;
-    width: 400px;
+    margin: auto;
+    width: 25em;
     float: right;
     border-radius: 10px;     
 	-moz-border-radius: 10px;     
@@ -55,10 +54,9 @@ h2 {
 
 #block3 {
     background-color: #08362d;
-    margin: 330px 0px;
-    padding: 0px 0px 50px 50px;
-    width: 915px;
-    height: 210px;
+    padding: 0 0 50px 50px;
+    width: 42em;
+    height: 11em;
     position: relative;    
     border-radius: 10% / 40%;    
 	-moz-border-radius: 10% / 40%;    
@@ -176,19 +174,6 @@ color: black;
     }
 }
 
-/* The Modal (background) */
-.modal {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
   
   /* Modal Content */
   .modal-content {
@@ -197,7 +182,7 @@ color: black;
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
   }
   
   /* The Close Button */
@@ -213,4 +198,12 @@ color: black;
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media all and (max-width:1600px){
+      #background {height: 100%;}
+      #block1 {position: initial; width: 100%;}
+      #block2 {float: none;}
+      #block3 {margin: 10px;}
+
   }

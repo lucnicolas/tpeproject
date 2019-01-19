@@ -155,7 +155,6 @@ function valeur_soir() {
 
 
 $(document).ready(function() {$
-    $( ".modal" ).hide();
     $( "#merci" ).hide();
     $(".loading").hide();
 
@@ -195,7 +194,7 @@ window.onclick = function(event) {
 
     // When the user clicks on <span> (x), close the modal
     $( ".close" ).click(function() {
-        $( ".modal" ).fadeOut( 400 );
+        $( "#description" ).fadeOut( 400 );
     });   
     
     $("#button1").hover(function(){
