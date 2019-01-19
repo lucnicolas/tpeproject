@@ -85,7 +85,7 @@ let dataMapping = {
             calories: "509",
             lipides: "20",
             glucides: "14",
-            proteines: "33"
+            proteines: "-100"
         }
     }
 };
@@ -190,7 +190,7 @@ $(document).ready(function() {
             document.getElementById('lip').innerHTML = total_lipides;
             document.getElementById('glu').innerHTML = total_glucides;
             document.getElementById('pro').innerHTML = total_proteines;
-            if (total_calories > 10) {
+            if (total_calories > 0 && total_lipides > 0 && total_glucides > 0 && total_proteines > 0) {
                 document.getElementById('txt-res').innerHTML = "Vous semblez manger équilibré";
                 document.getElementById('rouge').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#145a32";
