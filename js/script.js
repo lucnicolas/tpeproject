@@ -110,7 +110,7 @@ function valeur_matin() {
     if (document.getElementById("midi").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
         document.getElementById("valider").removeAttribute("disabled");
         checkForm=true;
-}}}
+}}
 function valeur_midi() {
     let select = document.getElementById("midi"); //récupères le contenu de l'id
     let choice = select.selectedIndex; //récupère l'index de l'option choisi
@@ -125,7 +125,7 @@ function valeur_midi() {
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("soir").selectedIndex != 0) {    
         document.getElementById("valider").removeAttribute("disabled");
         checkForm=true;
-}}}
+}}
 function valeur_soir() {
     let select = document.getElementById("soir"); //récupères le contenu de l'id
     let choice = select.selectedIndex; //récupère l'index de l'option choisi
@@ -144,7 +144,7 @@ function valeur_soir() {
     if (document.getElementById("matin").selectedIndex != 0 && document.getElementById("midi").selectedIndex != 0) {    
         document.getElementById("valider").removeAttribute("disabled");
         checkForm=true;
-}}}
+}}
 
 /* Fonctions au chargement de la page */
 $(document).ready(function() {
