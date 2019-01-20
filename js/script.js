@@ -273,7 +273,7 @@ $(document).ready(function() {
         
 });
 
-/* if (2100 > total_calories > 2500 && 73 > total_lipides > 83 && 285 > total_glucides > 296 && 112 > total_proteines > 122) {
+/* if (2280 > total_calories > 2380 && 90 > total_lipides > 100 && 262 > total_glucides > 291 && 70 > total_proteines > 117) {
                 document.getElementById('txt-res').innerHTML = 'Vous semblez manger équilibré';
                 document.getElementById('rouge').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#145a32";
