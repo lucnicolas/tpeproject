@@ -1,6 +1,10 @@
 /* --- VARIABLES --- */
 
 let checkForm //variables qui stockera si oui ou non le formulaire est complété
+let checkCal
+let checkLip
+let checkGlu
+let checkPro
 
 //Initialisation des totaux
 let total_calories=0
@@ -171,12 +175,13 @@ $(document).ready(function() {
         $( "select").attr("disabled", true);
     }); 
 
-    //Quand l'utilisateur clic quelque part sur la page, si le formulaire est complété, montre le message #merci
+    //
     $("option").click(function() { 
         if (checkForm ===true){
             $("#merci").show("400");
             $("#valider").css("background", "white");
         }
+
     });
 
     //When the user clicks anywhere outside of the modal, close it
@@ -197,14 +202,56 @@ $(document).ready(function() {
     
     //Quand l'utilisateur se trouve sur le bouton #valider, si le formulaire est complété, anime le bouton #fermer et envoie les les valeurs totales dans le #resultat
     $("#valider").hover(function(){
-        if (checkForm===true){
+        if (checkForm){
+            if (total_calories > 2100 && total_calories < 2500) {
+                checkCal = true;
+            } else {
+                checkCal = false;
+            }
+            if (total_lipides > 73 && total_lipides < 83) {
+                checkLip = true;
+            } else {
+                checkLip = false;
+            }
+            if (total_glucides > 285 && total_glucides < 296) {
+                checkGlu = true;
+            } else {
+                checkGlu = false;
+            }
+            if (total_proteines > 112 && total_proteines < 122) {
+                checkPro = true;
+            } else {
+                checkPro = false;
+            };
             $(this).css("background-color", "black");
             $(this).css("color", "white");
             document.getElementById('cal').innerHTML = total_calories;
             document.getElementById('lip').innerHTML = total_lipides;
             document.getElementById('glu').innerHTML = total_glucides;
             document.getElementById('pro').innerHTML = total_proteines;
-            if (2100 > total_calories > 2500 && 73 > total_lipides > 83 && 285 > total_glucides > 296 && 112 > total_proteines > 122) {
+            console.log(total_glucides);
+            console.log(checkGlu);
+            if (checkCal) {
+                document.getElementById('fa-Cal').innerHTML = '<i class="fas fa-check"></i>';
+            } else {
+                document.getElementById('fa-Cal').innerHTML = '<i class="fas fa-times"></i>';
+            }
+            if (checkLip) {
+                document.getElementById('fa-Lip').innerHTML = '<i class="fas fa-check"></i>';
+            } else {
+                document.getElementById('fa-Lip').innerHTML = '<i class="fas fa-times"></i>';
+            }
+            if (checkGlu) {
+                document.getElementById('fa-Glu').innerHTML = '<i class="fas fa-check"></i>';
+            } else {
+                document.getElementById('fa-Glu').innerHTML = '<i class="fas fa-times"></i>';
+            }
+            if (checkPro) {
+                document.getElementById('fa-Pro').innerHTML = '<i class="fas fa-check"></i>';
+            } else {
+                document.getElementById('fa-Pro').innerHTML = '<i class="fas fa-times"></i>';
+            }
+            if (checkCal && checkLip && checkGlu && checkLip && checkPro) {
                 document.getElementById('txt-res').innerHTML = 'Vous semblez manger équilibré';
                 document.getElementById('rouge').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#145a32";
@@ -212,9 +259,13 @@ $(document).ready(function() {
                 document.getElementById('txt-res').innerHTML = 'Vous ne semblez pas manger équilibré';
                 document.getElementById('vert').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#641e16";
-            }
+            } 
+            
+            
+
+
         }}, function(){
-            if (checkForm===true){
+            if (checkForm){
             $(this).css("background", "white");
             $(this).css("color", "black");
       }});
@@ -222,3 +273,12 @@ $(document).ready(function() {
         
 });
 
+/* if (2100 > total_calories > 2500 && 73 > total_lipides > 83 && 285 > total_glucides > 296 && 112 > total_proteines > 122) {
+                document.getElementById('txt-res').innerHTML = 'Vous semblez manger équilibré';
+                document.getElementById('rouge').style.display = "none";
+                document.getElementById('resultat').style.backgroundColor = "#145a32";
+            } else {
+                document.getElementById('txt-res').innerHTML = 'Vous ne semblez pas manger équilibré';
+                document.getElementById('vert').style.display = "none";
+                document.getElementById('resultat').style.backgroundColor = "#641e16";
+            }  */

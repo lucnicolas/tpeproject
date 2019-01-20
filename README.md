@@ -3,6 +3,12 @@
 
 ECHEANCE 22/01/19
 
+20/01/2019 - v.1.4 {
+    - 
+    //TODO : - 
+    //TODO : - 
+}
+
 19/01/2019 - v.1.4 {
     - mise à jour de la data
     - rédaction du contenu
