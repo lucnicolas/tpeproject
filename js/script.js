@@ -183,10 +183,25 @@ $(document).ready(function() {
         }
     });
 
-    $("option").click(function(){
-        $('#matin').hide(5000);
+    //
+    $('.matin-opt').click(function(){
+        $('.matin-opt').css("background", "white");
+        $('#matin').hide(400);
         $('#matin').attr("disabled", true);
-    })
+        $('#matin-msg').text($('#matin option:selected').text());
+    });
+    $('.midi-opt').click(function(){
+        $('#midi').hide(400);
+        $('#midi').attr("disabled", true);
+        $('#midi-msg').text($('#midi option:selected').text());
+
+    });
+    $('.soir-opt').click(function(){
+        $('#soir').hide(400);
+        $('#soir').attr("disabled", true);
+        $('#soir-msg').text($('#soir option:selected').text());
+
+    });
 
     //When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {

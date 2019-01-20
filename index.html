@@ -18,7 +18,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h1>Ce programme à été conçu dans le cadre <br> du TPE sur l'obésité.</h1>
-            <p>Réalisé par Lorie QUIBLIER, Salomé GIBERT-MINAIRE et Marie NICOLAS.</p
+            <p>Réalisé par Lorie QUIBLIER, Salomé GIBERT-MINAIRE et Marie NICOLAS.</p>
           
             <p> Ce TPE a pour vocation de sensibiliser un public sur les réels effets de l'alimentation. Sous forme ludique ce programme permet de calculer les calories, lipides, glucides et protéines absorbés au cours des repas pendant une journée.   </p>
         
@@ -46,35 +46,36 @@
                 <p><i><i class="fas fa-coffee"></i> Votre repas du matin : </i>
                 <select name="matin" size="1" id="matin" onchange="valeur_matin();">
                     <option selected disabled>Choisir un menu</option>
-                    <option value="option1">Menu 1</option>
-                    <option value="option2">Menu 2</option>
-                    <option value="option3">Menu 3</option>
-                    <option value="option4">Menu 4</option>
-                </select></p>
-                </br>
+                    <option class="matin-opt" value="option1">Menu 1</option>
+                    <option class="matin-opt" value="option2">Menu 2</option>
+                    <option class="matin-opt" value="option3">Menu 3</option>
+                    <option class="matin-opt" value="option4">Menu 4</option>
+                </select>
+            <div class="msg"><i id="matin-msg" ></i></div>
+            </p>
                 </br>
                 <p><i><i class="fas fa-cookie-bite"></i> Votre repas du midi : </i>
                     <select name="midi" size="1" id="midi" onchange="valeur_midi();">
                         <option selected disabled>Choisir un menu</option>
-                        <option value="option5">Menu 1</option>
-                        <option value="option6">Menu 2</option>
-                        <option value="option7">Menu 3</option>
-                        <option value="option8">Menu 4</option>
+                        <option class="midi-opt" value="option5">Menu 1</option>
+                        <option class="midi-opt" value="option6">Menu 2</option>
+                        <option class="midi-opt" value="option7">Menu 3</option>
+                        <option class="midi-opt" value="option8">Menu 4</option>
                     </select>
+                <div class="msg"><i id="midi-msg" ></i></div>
                 </p>
-                </br>
                 </br>
                 <p><i><i class="fas fa-carrot"></i> Votre repas du soir : </i>
                     <select name="soir" size="1" id="soir" onchange="valeur_soir();">
                         <option selected disabled>Choisir un menu</option>
-                        <option value="option9">Menu 1</option>
-                        <option value="option10">Menu 2</option>
-                        <option value="option11">Menu 3</option>
-                        <option value="option12">Menu 4</option>
-                    </select></p>
+                        <option class="soir-opt" value="option9">Menu 1</option>
+                        <option class="soir-opt" value="option10">Menu 2</option>
+                        <option class="soir-opt" value="option11">Menu 3</option>
+                        <option class="soir-opt" value="option12">Menu 4</option>
+                    </select>
+                <div class="msg"><i id="soir-msg" ></i></div>
+                </p>
             </div>
-            </br>
-            <h2 id="merci">Merci d'avoir répondu.</h2>
             </br>
             <button class="button" id="valider" disabled>Valider</button>
             <input class="button" id="reload" type="submit" value="Reset" onClick="window.location.reload(true);">
@@ -85,8 +86,8 @@
         <div id="resultat" style="display: none;">
             <h2 id="txt-res">Résultat de l'enquête</h2>
             <div>
-                <p>Aujourd'hui vous avez absorbez :</p>
-                <ul>
+                <a>Aujourd'hui vous avez absorbez :</a>
+                <ul id="txt-res">
                     <li><a id='cal'>calories</a> kCal <i id="fa-Cal"></i></li>
                     <li><a id='lip'>lipides</a>g de lipides <i id="fa-Lip"></i></li>
                     <li><a id='glu'>glucides</a>g de glucides <i id="fa-Glu"></i></li>
