@@ -203,22 +203,22 @@ $(document).ready(function() {
     //Quand l'utilisateur se trouve sur le bouton #valider, si le formulaire est complété, anime le bouton #fermer et envoie les les valeurs totales dans le #resultat
     $("#valider").hover(function(){
         if (checkForm){
-            if (total_calories > 2100 && total_calories < 2500) {
+            if (total_calories > 2280 && total_calories < 2380) {
                 checkCal = true;
             } else {
                 checkCal = false;
             }
-            if (total_lipides > 73 && total_lipides < 83) {
+            if (total_lipides > 90 && total_lipides < 100) {
                 checkLip = true;
             } else {
                 checkLip = false;
             }
-            if (total_glucides > 285 && total_glucides < 296) {
+            if (total_glucides > 262 && total_glucides < 291) {
                 checkGlu = true;
             } else {
                 checkGlu = false;
             }
-            if (total_proteines > 112 && total_proteines < 122) {
+            if (total_proteines > 70 && total_proteines < 117) {
                 checkPro = true;
             } else {
                 checkPro = false;
