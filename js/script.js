@@ -16,80 +16,80 @@ let total_proteines=0
 let dataMapping = {
     matin: {
         "option1": {
-            calories: "254",
-            lipides: "15",
-            glucides: "20",
-            proteines: "12"
+            calories: "749",
+            lipides: "31",
+            glucides: "133",
+            proteines: "26"
         },
         "option2": {
-            calories: "396",
-            lipides: "15",
-            glucides: "54",
-            proteines: "9"
+            calories: "757",
+            lipides: "30",
+            glucides: "93",
+            proteines: "25"
         },
         "option3": {
-            calories: "247",
-            lipides: "12",
-            glucides: "31",
-            proteines: "5"
+            calories: "512",
+            lipides: "22",
+            glucides: "61",
+            proteines: "22"
         },
         "option4": {
-            calories: "894",
+            calories: "846",
             lipides: "31",
-            glucides: "147",
-            proteines: "9"
+            glucides: "105",
+            proteines: "24"
         }
     },
     midi: {
         "option5": {
-            calories: "456",
-            lipides: "12",
-            glucides: "61",
-            proteines: "27"
+            calories: "775",
+            lipides: "32",
+            glucides: "90",
+            proteines: "29"
         },
         "option6": {
-            calories: "862",
-            lipides: "48",
-            glucides: "37",
-            proteines: "52"
+            calories: "787",
+            lipides: "34",
+            glucides: "85",
+            proteines: "31"
         },
         "option7": {
-            calories: "894",
-            lipides: "31",
-            glucides: "146",
-            proteines: "9"
+            calories: "812",
+            lipides: "32",
+            glucides: "99",
+            proteines: "30"
         },
         "option8": {
-            calories: "547",
-            lipides: "39",
-            glucides: "28",
-            proteines: "29"
+            calories: "811",
+            lipides: "36",
+            glucides: "93",
+            proteines: "34"
         }
     },
     soir: {
         "option9": {
-            calories: "727",
-            lipides: "83",
-            glucides: "35",
-            proteines: "20"
-        },
-        "option10": {
-            calories: "813",
-            lipides: "49",
-            glucides: "60",
+            calories: "879",
+            lipides: "31",
+            glucides: "107",
             proteines: "29"
         },
+        "option10": {
+            calories: "883",
+            lipides: "41",
+            glucides: "123",
+            proteines: "32"
+        },
         "option11": {
-            calories: "361",
-            lipides: "9",
-            glucides: "55",
-            proteines: "10"
+            calories: "834",
+            lipides: "31",
+            glucides: "103",
+            proteines: "28"
         },
         "option12": {
-            calories: "588",
-            lipides: "19",
-            glucides: "46",
-            proteines: "27"
+            calories: "989",
+            lipides: "56",
+            glucides: "99",
+            proteines: "30"
         }
     }
 };
@@ -173,6 +173,10 @@ $(document).ready(function() {
         $( "#valider" ).hide( "slow" );
         $( "#loading" ).hide( "slow" );
         $( "select").attr("disabled", true);
+        console.log(total_calories);
+        console.log(total_lipides);
+        console.log(total_glucides);
+        console.log(total_proteines);
     }); 
 
     //
@@ -220,22 +224,22 @@ $(document).ready(function() {
     //Quand l'utilisateur se trouve sur le bouton #valider, si le formulaire est complété, anime le bouton #fermer et envoie les les valeurs totales dans le #resultat
     $("#valider").hover(function(){
         if (checkForm){
-            if (total_calories > 2280 && total_calories < 2380) {
+            if (total_calories > 2180 && total_calories < 2480) {
                 checkCal = true;
             } else {
                 checkCal = false;
             }
-            if (total_lipides > 90 && total_lipides < 100) {
+            if (total_lipides > 80 && total_lipides < 110) {
                 checkLip = true;
             } else {
                 checkLip = false;
             }
-            if (total_glucides > 262 && total_glucides < 291) {
+            if (total_glucides > 242 && total_glucides < 301) {
                 checkGlu = true;
             } else {
                 checkGlu = false;
             }
-            if (total_proteines > 70 && total_proteines < 117) {
+            if (total_proteines > 65 && total_proteines < 122) {
                 checkPro = true;
             } else {
                 checkPro = false;
@@ -246,8 +250,6 @@ $(document).ready(function() {
             document.getElementById('lip').innerHTML = total_lipides;
             document.getElementById('glu').innerHTML = total_glucides;
             document.getElementById('pro').innerHTML = total_proteines;
-            console.log(total_glucides);
-            console.log(checkGlu);
             if (checkCal) {
                 document.getElementById('fa-Cal').innerHTML = '<i class="fas fa-check"></i>';
             } else {
@@ -277,6 +279,8 @@ $(document).ready(function() {
                 document.getElementById('vert').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#641e16";
             } 
+
+
         }}, function(){
             if (checkForm){
             $(this).css("background", "white");
