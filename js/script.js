@@ -181,17 +181,19 @@ $(document).ready(function() {
             $("#merci").show("400");
             $("#valider").css("background", "white");
         }
-
     });
+
+    $("option").click(function(){
+        $('#matin').hide(5000);
+        $('#matin').attr("disabled", true);
+    })
 
     //When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
     if (event.target == document.getElementById('modal')) {
         $( "#modal" ).fadeOut( 400 );
         $( "#footer-luc" ).fadeOut( 200 );
-
-    }
-    }
+    }};
 
     //when the user clicks on <span> (x), close the modal
     $( ".close" ).click(function() {
@@ -260,25 +262,10 @@ $(document).ready(function() {
                 document.getElementById('vert').style.display = "none";
                 document.getElementById('resultat').style.backgroundColor = "#641e16";
             } 
-            
-            
-
-
         }}, function(){
             if (checkForm){
             $(this).css("background", "white");
             $(this).css("color", "black");
       }});
     
-        
 });
-
-/* if (2280 > total_calories > 2380 && 90 > total_lipides > 100 && 262 > total_glucides > 291 && 70 > total_proteines > 117) {
-                document.getElementById('txt-res').innerHTML = 'Vous semblez manger équilibré';
-                document.getElementById('rouge').style.display = "none";
-                document.getElementById('resultat').style.backgroundColor = "#145a32";
-            } else {
-                document.getElementById('txt-res').innerHTML = 'Vous ne semblez pas manger équilibré';
-                document.getElementById('vert').style.display = "none";
-                document.getElementById('resultat').style.backgroundColor = "#641e16";
-            }  */
