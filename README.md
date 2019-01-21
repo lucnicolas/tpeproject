@@ -104,3 +104,5 @@ MBP-de-Luc:tpeproject luc$ git branch -r
   origin/master-temporaire
 MBP-de-Luc:tpeproject luc$ git branch -rd origin/master-temporaire
 Deleted remote-tracking branch origin/master-temporaire.
+
+NOUS AVONS TERMINE ! BRAVO LUC, MERCI DE TON AIDE !
