@@ -26,6 +26,15 @@ ul {
     margin-top: 8px;
 }
 
+#preambule {
+    margin-bottom: 5px;
+}
+
+#obese {
+    font-family: 'Crete Round', serif;
+
+}
+
 img {
     height: 150px; 
     width: 150px;
@@ -102,7 +111,7 @@ img {
 
 #resultat {
     padding: 0 0 50px 50px;
-    margin-top: 380px;
+    margin-top: 400px;
     width: 40em;
     height: 11em;
     position: absolute;    

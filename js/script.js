@@ -18,7 +18,7 @@ let dataMapping = {
         "option1": {
             calories: "749",
             lipides: "31",
-            glucides: "133",
+            glucides: "95",
             proteines: "26"
         },
         "option2": {
@@ -60,7 +60,7 @@ let dataMapping = {
             proteines: "30"
         },
         "option8": {
-            calories: "811",
+            calories: "911",
             lipides: "36",
             glucides: "93",
             proteines: "34"
@@ -70,11 +70,11 @@ let dataMapping = {
         "option9": {
             calories: "879",
             lipides: "31",
-            glucides: "107",
+            glucides: "133",
             proteines: "29"
         },
         "option10": {
-            calories: "883",
+            calories: "934",
             lipides: "41",
             glucides: "123",
             proteines: "32"
@@ -88,7 +88,7 @@ let dataMapping = {
         "option12": {
             calories: "989",
             lipides: "56",
-            glucides: "99",
+            glucides: "115",
             proteines: "30"
         }
     }
