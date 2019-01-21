@@ -17,6 +17,10 @@ h3 {
     display: inline;
 }
 
+h5 {
+    margin-top: 0;
+}
+
 ul {
     position: absolute;
     margin-top: 8px;
@@ -279,7 +283,7 @@ cursor: pointer;
 }
 
 /* Responive Design */
-@media all and (max-width:1300px) {
+@media all and (max-width:1269px) {
     #component-principal {height: 100%; width: 75%;}
     #description {position: initial; width: 100%;}
     #formulaire {float: none; margin-top: 50px;}
