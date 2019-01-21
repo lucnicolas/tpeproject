@@ -4,9 +4,12 @@
 ECHEANCE 22/01/19
 
 20/01/2019 - v.1.4 {
-    - 
-    //TODO : - 
-    //TODO : - 
+    - mise à jour et finalisation de la data.
+    - mise à jour du contenu.
+    - icones check ou times en fonction de si le resultat est correct ou non.
+    - les menus se desactive à la selection et affiche leur contenu en dessous.
+    //TODO : - finaliser le contenu
+    //TODO : - organiser et optimiser le code + rédaction commentaires
 }
 
 19/01/2019 - v.1.4 {
