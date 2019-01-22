@@ -3,7 +3,7 @@
 
 ECHEANCE 22/01/19
 
-20/01/2019 - v.1.4 {
+20/01/2019 - v.1.5 {
     - mise à jour et finalisation de la data.
     - mise à jour du contenu.
     - icones check ou times en fonction de si le resultat est correct ou non.
