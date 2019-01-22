@@ -90,6 +90,8 @@ img {
 	font-weight: normal;     
     border: 2px groove #808080; 
     text-align: center;
+    animation: App-logo-spin infinite 10s linear;
+
 }
 
 #form-selects {
@@ -189,7 +191,8 @@ color: black;
     transform:translate(-50%,-50%);
     height:40px;
     display:flex;
-    align-items:center
+    align-items:center;
+
 }
 
 
@@ -304,3 +307,13 @@ cursor: pointer;
     .footer {display: none;}
 
 }
+
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
